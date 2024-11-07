@@ -1,2 +1,2 @@
-# Comp229-Group-project-2
- This is the part-2 of our group project
+# COMP229_Backend_GrProject
+ Backend GroupProject
