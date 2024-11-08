@@ -5,9 +5,13 @@ const AdSchema = new Schema({
     title: String,
     description: String,
     price: String,
-    createdAt: Date,
+    createdAt: { type: Date, default: Date.now },
     expiresAt: Date,
-    isActive: Boolean
+    isActive: Boolean,
+    owner: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User"
+        }
 })
 
 module.exports = mongoose.model('Ad', AdSchema);
